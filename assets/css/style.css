@@ -1,0 +1,45 @@
+body {
+	background-image: url(../images/49er1.jpg);
+	background-size: cover;
+}
+
+div {
+	border: solid;
+	border-color: #264;
+	border-radius: 5px;
+}
+
+p {
+	padding-left: 10px;
+}
+
+h3 {
+	padding-left: 10px;
+}
+.instructions {
+	width: 50%;
+	background-color: green;
+    background: rgba(76, 175, 80, 0.6);
+}
+
+.panel {
+	width: 40%;
+}
+
+.ore {
+	height: 100px;
+	width: 100px;
+}
+
+.stage1 {
+	height: 100px;
+}
+
+.stg1 {
+	height: 100px;
+	background-color: green;
+	background: rgba(76, 175, 80, 0.6);
+}
+.stage2 {
+	text-align: center;
+}

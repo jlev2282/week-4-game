@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mineral Miner 49er!</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+<body>
+	<h1>Welcome to Mineral Miner 49er!</h1>
+	<div class="instructions">
+		<h3>Instructions</h3>
+		<p>You will be given a random number goal at the start of each game.
+		</p>
+		<p>There are four rare ore minerals listed below. By clicking on an ore you will add a specific amount of points to your total score.
+		</p>
+		<p>
+		You win the game by matching your total score to the randomized number goal. You lose the game if your total score goes above the randomized number goal</p>
+		<p>
+		The value of each ore is hidden from you until you click on it
+		</p>
+		<p>
+		Each time the game starts, the game witll change the value of each rare ore
+		</p>
+	</div>
+	<br>
+	<button>START GAME</button>
+	<br>
+	<div class="panel">
+		<div class="row stage1">
+			<div class="col-lg-6 stg1">Goal Number</div>
+			<div class="col-lg-3 stg1">Wins:<br>Losses:</div>
+		</div>
+		<div class="row stage2">
+			<div class="col-lg-3 goldore"><img class="ore" src="assets/images/gold.png"><button>Gold</button></div>
+			<div class="col-lg-3 silverore"><img class="ore" src="assets/images/silver.jpg"><button>Silver</button></div>
+			<div class="col-lg-3 titaniumore"><img class="ore" src="assets/images/titanium.jpg"><button>Titanium</button></div>
+			<div class="col-lg-3 diamondore"><img class="ore" src="assets/images/diamond.jpg"><button>Diamond</button></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">Your score is</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 stg1">Score#</div>
+		</div>
+	</div>
+</body>
+</html>
