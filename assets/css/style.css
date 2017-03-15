@@ -19,14 +19,19 @@ h3 {
 .instructions {
 	width: 50%;
 	background-color: green;
-    background: rgba(76, 175, 80, 0.6);
+    background: rgba(76, 175, 80, 0.8);
 }
 
+#goalnum {
+	text-align: center;
+	padding-top: 15px;
+	font-size: 30px;
+}
 .panel {
 	width: 40%;
 }
 
-.ore {
+.orepic {
 	height: 100px;
 	width: 100px;
 }
@@ -41,6 +46,7 @@ h3 {
 	background: rgba(76, 175, 80, 0.6);
 }
 .stage2 {
+	background-color: green;
 	text-align: center;
 	background: rgba(76, 175, 80, 0.1);
 }

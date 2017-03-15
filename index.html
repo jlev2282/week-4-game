@@ -11,6 +11,8 @@
   <!-- Added a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </head>
 <body>
 	<h1>Welcome to Mineral Miner 49er!</h1>
@@ -34,20 +36,20 @@
 	<br>
 	<div class="panel">
 		<div class="row stage1">
-			<div class="col-lg-6 stg1">Goal Number</div>
-			<div class="col-lg-6 stg1">Wins:<br>Losses:</div>
+			<div id="goalnum" class="col-lg-6 stg1">Goal Number</div>
+			<div class="col-lg-6 stg1">Wins:<p id="wins">0</p>Losses:<p id="losses">0</p></div>
 		</div>
 		<div class="row stage2">
-			<div class="col-lg-3"><img class="ore" src="assets/images/gold.png"><button id="golore" value="">Gold</button></div>
-			<div class="col-lg-3"><img class="ore" src="assets/images/silver.jpg"><button id="silore" value="">Silver</button></div>
-			<div class="col-lg-3"><img class="ore" src="assets/images/titanium.jpg"><button id="titore" value="">Titanium</button></div>
-			<div class="col-lg-3"><img class="ore" src="assets/images/diamond.jpg"><button id="diaore" value="">Diamond</button></div>
+			<div class="col-lg-3"><img class="orepic" src="assets/images/gold.png"><button class="ore" id="golore" value="">Gold</button></div>
+			<div class="col-lg-3"><img class="orepic" src="assets/images/silver.jpg"><button class="ore" id="silore" value="">Silver</button></div>
+			<div class="col-lg-3"><img class="orepic" src="assets/images/titanium.jpg"><button class="ore" id="titore" value="">Titanium</button></div>
+			<div class="col-lg-3"><img class="orepic" src="assets/images/diamond.jpg"><button class="ore" id="diaore" value="">Diamond</button></div>
 		</div>
 		<div class="row">
 			<div class="col-lg-6">Your score is</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-6 stg1">Score#</div>
+			<div id="scorebox" class="col-lg-6 stg1">Score#</div>
 		</div>
 	</div>
 </body>
