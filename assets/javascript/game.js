@@ -2,6 +2,7 @@ $(document).ready(function() {
 //Define the variables for the minerals//
 var oreArray = ['#golore','#silore','#titore','#diaore'];
 var scoreArray = [];
+var score = '';
 
 // state function to start game and set values for ores and goal number//
 $('#start').on('click', function(){
@@ -14,18 +15,24 @@ $('#start').on('click', function(){
 	console.log(rannum);
 	$('#goalnum').html(rannum);
 	$('#goalnum').attr('value',rannum);
+	var scoreArray=[];
 	});
 //state function that logics scoreboard
 $('.ore').on('click', function() {
-	var score = (this.value);
-	//$('scoreArray').push(score);
-	$('#scorebox').html(scoreArray);
-	});
+	var total = (this.value);
+	scoreArray.push(parseInt(total));
 
+	for ( var i = 0; i < scoreArray.length; i++ ){
+    	score += scoreArray[i]
+	};
+    
+	$('#scorebox').html(score);
+
+	});
 //state the logic for winning and losing
-if ('#scorebox.value'='#goalnum.value') {
+/*if ('#scorebox.value'='#goalnum.value') {
 	alert(You win!)
 	 };
-}
+}*/
 
 });
