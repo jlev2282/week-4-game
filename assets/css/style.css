@@ -29,6 +29,10 @@ h3 {
 }
 .panel {
 	width: 40%;
+	
+}
+
+.ore {
 }
 
 .orepic {
@@ -42,11 +46,20 @@ h3 {
 
 .stg1 {
 	height: 100px;
-	background-color: green;
 	background: rgba(76, 175, 80, 0.6);
 }
 .stage2 {
 	background-color: green;
 	text-align: center;
 	background: rgba(76, 175, 80, 0.1);
+}
+
+.scrhead {
+	background: rgba(76, 175, 80, 0.6);
+}
+
+#scorebox {
+	text-align: center;
+	padding-top: 15px;
+	font-size: 30px;
 }
