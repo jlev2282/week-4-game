@@ -9,6 +9,8 @@ var losses = 0;
 // state function to start game and set values for ores and goal number//
 $('#start').on('click', function(){
 	$('#scorebox').html("0");
+	scoreArray=[];
+	score=0;
 	for (var i=0; i<4; i++) {
 		var oreval = Math.floor(Math.random() * 11) +1;
 		console.log(oreval);
@@ -18,19 +20,14 @@ $('#start').on('click', function(){
 	console.log(rannum);
 	$('#goalnum').html(rannum);
 	$('#goalnum').attr('value',rannum);
-	var scoreArray=[];
 	});
 //state function that logics scoreboard
 $('.ore').on('click', function() {
 	var total = (this.value);
 	scoreArray.push(parseInt(total));
 	score += scoreArray[scoreArray.length - 1];
-	// for ( var i = 0; i < scoreArray.length; i++ ){
- //    	score += scoreArray[i]
-	// };
-    
 	$('#scorebox').html(score);
-
+//State logic that determines wins vs losses//
 	if (rannum===score){
 		alert("You Win!");
 		wins++;
